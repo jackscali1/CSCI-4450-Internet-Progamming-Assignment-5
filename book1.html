@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      }
-    </script>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-      <h1 class="text-center text-blue-600 text-3xl mt-5">
-      Intenta crear estos botones
+        /* Custom Tailwind CSS configuration */
+        .tw-config {
+            --tw-bg-custom: #fefcf6;
+            --tw-text-custom: #4a5568;
+        }
+
+        /* Custom button styling */
+        .custom-btn {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .custom-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="tw-config font-poppins bg-tw-bg-custom text-tw-text-custom">
+    <h1 class="text-3xl font-bold underline text-clifford text-center my-8">Hello world!</h1>
+
+    <h1 class="text-center text-blue-600 text-3xl mt-5 mb-8">
+        Let's create these beautiful buttons!
     </h1>
-    
-    <section class="flex justify-center gap-2 mt-2">
-      <button
-        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900 transition"
-      >
-        bg-blue-500
-      </button>
-      <button
-        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-900 transition"
-      >
-        bg-red-500
-      </button>
-      <button
-        class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-900 transition"
-      >
-        bg-orange-500
-      </button>
+
+    <section class="flex justify-center gap-2 mt-2 mb-8">
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 custom-btn">
+            Blue Button
+        </button>
+        <button class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-700 custom-btn">
+            Red Button
+        </button>
+        <button class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-700 custom-btn">
+            Orange Button
+        </button>
     </section>
 
-    
-  </body>
+</body>
+<footer class="bg-gray-900 text-white text-center py-6 mt-8">
+    <p>&copy; Jack Scali Assignment #5 CSCI 4450</p>
+    <a href="https://csci4450-jackscali-5.netlify.app/" class="text-gray-300 hover:text-gray-100 mt-2 block">Back to Homepage</a>
+</footer>
+
 </html>
+
