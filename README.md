@@ -35,6 +35,8 @@ MathJax
 Installation
 No installation required. Access the webpages online via the Netlify hosted platform.
 
+https://jackscali1.github.io/scali-csci4450-05/
+
 Usage
 Navigate through the portfolio webpage for project showcases. Explore the Tailwind CSS page for styling demonstrations, learn about Marcus Aurelius, and utilize the LaTeX formula renderer for mathematical expressions.
 
